@@ -62,6 +62,12 @@ java GameOfLife 15
 java -cp .:/path/to/hamcrest-all-1.3.jar:/path/to/junit-4.12.jar org.junit.runner.JUnitCore PinningTest
 ```
 
+Some issues:
+
+* Some methods are private methods. I have to use Reflection to test these private methods. 
+
+* runContinuous method usually runs infinitely. I have to use a second thread to call stop method after a fixed period of time.
+
 
 
 
