@@ -11,7 +11,7 @@ I have following findings:
 
 * In the process of running, if I hit stop button and then write button, the CPU usage will decrease first and then increase a lot. So I think the write function is also CPU-intensive. The corresponding method is toString method of Cell class.
 
-![](https://drive.google.com/open?id=0Byq0G7BliOfeNzNKQmY5eTFhRTA)
+![](/pics/write.png)
 
 I generated following pinning tests in PinningTest.java file:
 
@@ -19,8 +19,8 @@ I generated following pinning tests in PinningTest.java file:
 
 * I added three pinning tests in the form of unit tests for runContinuous method in MainPanel class. One for all cells dead, one for corner square stable pattern, and the last for diagonal disppear pattern. They all passed with the legacy code.
 
-![](/Users/shuning/Desktop/1st run/squarestable.png)
-![](/Users/shuning/Desktop/1st run/diagonaldisappear.png)
+![](/pics/squarestable.png)
+![](/pics/diagonaldisappear.png)
 
 * I added four pinning tests in the form of unit tests for toString method in Cell class. One for alive cell, one for dead cell, one for aliveToDead cell, and the last for deadToAlive cell. They all passed with the legacy code.
 
@@ -36,11 +36,11 @@ After I made these changes, I profiled again using VisualVM with the same patter
 
 * convertToInt and runContinuous method are no longer the most CPU-intensive methods.
 
-![](/Users/shuning/Desktop/1st run/convertToInt_runContinuous_After.png)
+![](/pics/convertToInt_runContinuous_After.png)
 
 * In the process of running, if I hit stop and write button, the CPU usage will stay at a low level.
 
-![](/Users/shuning/Desktop/1st run/write_After.png)
+![](/pics/write_After.png)
 
 How to run the program code and test code:
 
