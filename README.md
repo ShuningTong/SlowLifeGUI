@@ -7,11 +7,11 @@ I have following findings:
 
 * convertToInt method and runContinuous method of MainPanel class are the most CPU-intensive.
 
-![](/Users/shuning/Desktop/1st run/convertToInt_runContinuous.png)
+![](https://drive.google.com/open?id=0Byq0G7BliOfeN003QVYyTnlYRk0)
 
 * In the process of running, if I hit stop button and then write button, the CPU usage will decrease first and then increase a lot. So I think the write function is also CPU-intensive. The corresponding method is toString method of Cell class.
 
-![](/Users/shuning/Desktop/1st run/write.png)
+![](https://drive.google.com/open?id=0Byq0G7BliOfeNzNKQmY5eTFhRTA)
 
 I generated following pinning tests in PinningTest.java file:
 
