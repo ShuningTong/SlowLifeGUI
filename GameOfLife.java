@@ -1,3 +1,4 @@
+
 public class GameOfLife {
 
     private static void showErrorMessage() {
