@@ -7,7 +7,7 @@ I have following findings:
 
 * convertToInt method and runContinuous method of MainPanel class are the most CPU-intensive.
 
-![](https://github.com/ShuningTong/SlowLifeGUI/blob/master/pics/convertToInt_runContinuous.png)
+![](/pics/convertToInt_runContinuous.png)
 
 * In the process of running, if I hit stop button and then write button, the CPU usage will decrease first and then increase a lot. So I think the write function is also CPU-intensive. The corresponding method is toString method of Cell class.
 
